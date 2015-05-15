@@ -1,0 +1,16 @@
+# Introduction #
+
+At end 3.0 (rc) version of jqGrid is out. This version is a major release, because I have totally rewrite the code for the methods without affecting the behavior of the plugin.
+The grid is now compatible with jQuery 1.2.1,
+
+# Details #
+
+  * The user can now manipulate the number of requested pages. This is done with adding a input box in the pager.
+  * I have added 4 methods - add, update, delete get row data. With these method we can manipulate the data at client side and of course a possibility to add local array data. See documentation for more information.
+  * Added is a method to load data only once from the server - loadonce flag in settings. After loading data we do all the manipulation at client side - sorting, scrolling ant etc. Note that in this case pager is disabled.
+  * Added is a new data type - local (against with xml and json). When this flag is set the grid expect data to be loaded locally via array.
+  * Now we can multi select rows. This can be done with only one flag multiselect. This feature can be used with server and local array data.
+  * For first time I introduce a sub grid. This feature can work only with xml data for now. The code and style for sub grid must be optimized and should be used with json too. See example page for more details.
+  * It is possible now to export the grid data to xml and json format. This is done with two new methods.
+  * A few new methods are added according to the new features - see documentation page for this.
+  * New theme of course
